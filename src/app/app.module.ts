@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './noConnectedComponents/login/login.component';
 import { RegisterComponent } from './noConnectedComponents/register/register.component';
 import { MyprofileComponent } from './connectedComponents/myprofile/myprofile.component';
+import {ShopComponent} from "./connectedComponents/shop/shop.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    MyprofileComponent
+    MyprofileComponent,
+    ShopComponent,
   ],
   imports: [
     BrowserModule,
