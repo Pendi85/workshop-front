@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Navbar } from './navbar/Navbar';
+import { Navbar } from './noConnectedComponents/navbar/Navbar';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +11,7 @@ export class AppComponent implements OnInit {
   navbar : Navbar;
   
   constructor() {
-    this.connected = false;
+    this.connected = true;
     this.navbar = new Navbar(this.connected);
   }
 
