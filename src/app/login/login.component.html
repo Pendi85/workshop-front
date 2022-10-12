@@ -4,12 +4,12 @@
     <div class="element_form">
         <label>Email address :</label>
         <input formControlName="emailControl" type="email" placeholder="Your email address (example@domain.com)"/>
-        <p class="information-forms"  *ngIf="!emailControl.valid && submitted">Adresse Mail invalide (Exemple valide : exemple@domain.com)</p>
+        <p class="information-forms"  *ngIf="!emailControl.valid && submitted">Invalid email address (valid : exemple@domain.com)</p>
     </div>
     <div class="element_form">
         <label>Password :</label>
         <input formControlName="passwordControl" type="password" placeholder="Your password"/>
-        <p class="information-forms" *ngIf="!passwordControl.valid && submitted">Vous devez saisir un mot de passe</p>
+        <p class="information-forms" *ngIf="!passwordControl.valid && submitted">You must select a password</p>
     </div>
     <input type="submit" value="Submit">
 </form>

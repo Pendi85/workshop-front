@@ -1,0 +1,38 @@
+<h2>Register to a new account</h2>
+
+<form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+    <div class="element_form">
+        <label for="email">Email Address :</label>
+        <input type="email" name="email" placeholder="example@domain.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" formControlName="email" required>
+        <p class="information-forms" *ngIf="submitted && !email.valid">Selected email address is not valid (valid : michel@gmail.com)</p>
+    </div>
+
+    <div class="element_form">
+        <label for="pseudonyme">Username :</label>
+        <input type="text" name="pseudonyme" placeholder="Select your username (example : michel44)" formControlName="username" required>
+        <p class="information-forms" *ngIf="submitted && !username.valid">Selected username is not valid</p>
+    </div>
+
+    <div class="element_form">
+        <label for="password">Password :</label>
+        <input type="password" name="password" placeholder="Mot de passe" formControlName="password"
+            pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$" required>
+        <p>Minimum 8 characters. Should contain at least on special character, a number and one letter</p>
+        <p class="information-forms"
+            *ngIf="submitted && (!password.valid || !confirmedPassword.valid || password.value != confirmedPassword.value)">
+            Password fields were not selected correctly </p>
+    </div>
+    
+    <div class="element_form">
+        <label for="confirm_password">Confirm the selected password :</label>
+        <input type="password" name="confirm_password" placeholder="Vous devez retaper le mot de passe"
+            formControlName="confirmedPassword" required>
+    </div>
+
+    <div id="accept_conditions_div" class="element_form">
+        <label for="accept_conditions"><input type="checkbox" name="accept_conditions" value="acceptCNIL" formControlName="acceptConditions" required>  I accept of ...</label>
+    </div>
+
+    <p class="information-forms" *ngIf="!registerForm.valid && submitted">***    Seleced data are not valid or some fields were not selected correctly</p>
+    <input id="register_btn" type="submit" value="Valider">
+</form>
