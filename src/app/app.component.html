@@ -1,9 +1,16 @@
-<nav>
-  <div class="icon_app">
+<nav class="navbar navbar-expand-sm">
+  <div class="navbar-brand icon_app">
     <img src="../assets/La_gazette-removebg-preview.png"/>
   </div>  
-  <ul>
-    <li *ngFor="let l of navbar.links"><a href="{{l.urlLink}}">{{l.valueLink}}</a></li>
-  </ul>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarItems" aria-controls="navbarItems" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-end" id="navbarItems">
+    <ul class="navbar-nav">
+      <li class="navbar-item" *ngFor="let l of navbar.links"><a class="nav-link" href="{{l.urlLink}}">{{l.valueLink}}</a></li>
+    </ul>
+  </div>
 </nav>
+
 <router-outlet></router-outlet>
