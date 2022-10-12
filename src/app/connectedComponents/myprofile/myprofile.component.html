@@ -17,17 +17,17 @@
 
     <div class="exp_data">
         <div>
-            <p><span class="exp_data_value">3000</span>
+            <p><span class="exp_data_value">{{employeeData.totalPoints}}</span>
                 <br>pts (total)</p>
         </div>
 
         <div>
-            <p><span class="exp_data_value">608</span>
+            <p><span class="exp_data_value">{{employeeData.pointsWonThisMonth}}</span>
                 <br>pts won this month</p>
         </div>
 
         <div>
-            <p><span class="exp_data_value">1500</span>
+            <p><span class="exp_data_value">{{employeeData.pointsRemaining}}</span>
                 <br>pts remaining</p>
         </div>
     </div>
@@ -36,32 +36,12 @@
         <a href="/myprofile">See my stuffs</a>
         <a href="/myprofile">See completed quests</a>
     </div>
-
-
 </div>
 
 <div id="success_section">
-    <div class="success_item">
-        <img src="../../../assets/succes_1.png" width="60" height="60">
-        <p>Nom du succès</p>
-        <span class="earned_pts">+20</span>
-    </div>
-
-    <div class="success_item">
-        <img src="../../../assets/succes_2.png" width="50" height="50">
-        <p>Nom du succès</p>
-        <span class="earned_pts">+120</span>
-    </div>
-
-    <div class="success_item">
-        <img src="../../../assets/succes_3.png" width="50" height="50">
-        <p>Nom du succès</p>
-        <span class="earned_pts">+60</span>
-    </div>
-
-    <div class="success_item">
-        <img src="../../../assets/succes_4-removebg-preview.png" width="50" height="50">
-        <p>Nom du succès</p>
-        <span class="earned_pts">+30</span>
+    <div class="success_item" *ngFor="let i of successList">
+        <img src="{{i.urlImg}}" width="60" height="60">
+        <p>{{i.name}}</p>
+        <span class="earned_pts">+{{i.earnedPts}}</span>
     </div>
 </div>

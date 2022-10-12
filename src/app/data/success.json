@@ -1,0 +1,6 @@
+[
+    {"name" : "Succès 1", "urlImg" : "../../../assets/succes_1.png", "earnedPts" : 20},
+    {"name" : "Succès 2", "urlImg" : "../../../assets/succes_2.png", "earnedPts" : 30},
+    {"name" : "Succès 3", "urlImg" : "../../../assets/succes_3.png", "earnedPts" : 40},
+    {"name" : "Succès 4", "urlImg" : "../../../assets/succes_4.png", "earnedPts" : 50}
+]

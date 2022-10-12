@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import successJson from '../../data/success.json';
+import informationsEmployeeJson from '../../data/informations_employee.json';
+
 
 @Component({
   selector: 'app-myprofile',
@@ -6,10 +9,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./myprofile.component.css']
 })
 export class MyprofileComponent implements OnInit {
+  successList : any[];
+  employeeData : any;
 
-  constructor() { }
+  constructor() {
+    this.successList = successJson;
+    this.employeeData = informationsEmployeeJson;
+  }
 
   ngOnInit(): void {
   }
 
+  getUrlIconRank() : string {
+    return "";
+  }
 }

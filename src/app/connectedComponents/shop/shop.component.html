@@ -1,0 +1,8 @@
+<h2>Shop / Buy products</h2>
+<div class="products">
+    <div *ngFor="let p of products">
+        <img src="{{p.urlIcon}}" height="100" width="100"/>
+        <p>{{p.label}}</p>
+        <a href="/shop">Acheter : {{p.price}} pts</a>
+    </div>
+</div>

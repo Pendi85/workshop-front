@@ -1,0 +1,6 @@
+[
+    {"urlIcon" : "../../../assets/coffee_machine.png", "label" : "+5€ de café", "price" : 100},
+    {"urlIcon" : "../../../assets/holiday.png", "label" : "+1 jour de congé", "price" : 5000},
+    {"urlIcon" : "../../../assets/coupon.png", "label" : "Coupons de réductions dans nos entreprises partenaires", "price" : 500},
+    {"urlIcon" : "../../../assets/ticket_resto.png", "label" : "+X billets de restaurants (valeur : Y€)", "price" : 50}
+]
