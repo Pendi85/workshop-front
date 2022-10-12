@@ -1,0 +1,8 @@
+<h3>Quests available</h3>
+<a href="/quests">See completed quests</a>
+<div>
+    <div *ngFor="let q of quests">
+        <p>{{q.name}}</p>
+        <span>+{{q.ptsToEarn}} points</span>
+    </div>
+</div>

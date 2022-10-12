@@ -1,0 +1,8 @@
+[
+    {"name" : "Nom de la quête 1", "ptsToEarn" : 60, "completed" : true},
+    {"name" : "Nom de la quête 2", "ptsToEarn" : 40, "completed" : false},
+    {"name" : "Nom de la quête 3", "ptsToEarn" : 20, "completed" : false},
+    {"name" : "Nom de la quête 4", "ptsToEarn" : 30, "completed" : false},
+    {"name" : "Nom de la quête 5", "ptsToEarn" : 25, "completed" : true},
+    {"name" : "Nom de la quête 6", "ptsToEarn" : 100, "completed" : false}
+]

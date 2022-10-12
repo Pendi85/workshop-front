@@ -8,6 +8,8 @@ import { LoginComponent } from './noConnectedComponents/login/login.component';
 import { RegisterComponent } from './noConnectedComponents/register/register.component';
 import { MyprofileComponent } from './connectedComponents/myprofile/myprofile.component';
 import { ShopComponent } from './connectedComponents/shop/shop.component';
+import { StuffsComponent } from './connectedComponents/stuffs/stuffs.component';
+import { QuestsComponent } from './connectedComponents/quests/quests.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { ShopComponent } from './connectedComponents/shop/shop.component';
     LoginComponent,
     RegisterComponent,
     MyprofileComponent,
-    ShopComponent
+    ShopComponent,
+    StuffsComponent,
+    QuestsComponent
   ],
   imports: [
     BrowserModule,
