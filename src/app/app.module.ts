@@ -10,6 +10,7 @@ import { MyprofileComponent } from './connectedComponents/myprofile/myprofile.co
 import { ShopComponent } from './connectedComponents/shop/shop.component';
 import { StuffsComponent } from './connectedComponents/stuffs/stuffs.component';
 import { QuestsComponent } from './connectedComponents/quests/quests.component';
+import { FilterQuestsPipe } from './connectedComponents/quests/filter-quests.pipe';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { QuestsComponent } from './connectedComponents/quests/quests.component';
     MyprofileComponent,
     ShopComponent,
     StuffsComponent,
-    QuestsComponent
+    QuestsComponent,
+    FilterQuestsPipe
   ],
   imports: [
     BrowserModule,

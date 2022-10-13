@@ -1,10 +1,10 @@
 {
     "urlPictureEmployee" : "../../../assets/michele.jfif",
-    "hierarchy" : "Manager",
-    "username" : "DupondMich44",
-    "rank" : 1,
-    "department" : "Marketing",
+    "hierarchy" : "Employee",
+    "username" : "DupondMich446",
+    "rank" : 2,
+    "department" : "Accounting",
     "totalPoints" : 3000,
-    "pointsWonThisMonth" : 608,
-    "pointsRemaining" : 1500
+    "pointsWonThisMonth" : 60,
+    "pointsRemaining" : 150
 }

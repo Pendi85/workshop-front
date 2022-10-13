@@ -8,9 +8,15 @@ import questsJson from '../../data/quests.json';
 })
 export class QuestsComponent implements OnInit {
   quests : any[];
+  seeOnlyCompletedQuests : boolean;
 
   constructor() { 
     this.quests = questsJson;
+    this.seeOnlyCompletedQuests = false;
+  }
+
+  toggleQuests() {
+    this.seeOnlyCompletedQuests = !this.seeOnlyCompletedQuests;
   }
 
   ngOnInit(): void {

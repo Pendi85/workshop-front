@@ -1,18 +1,18 @@
 <div id="profile_informations">
     <div class="profile_picture">
-        <img src="../../../assets/badges_3.png" width="100" height="100">
+        <img src="{{getUrlIconHierarchy(employeeData.hierarchy)}}" width="100" height="100">
         <img src="../../../assets/michele.jfif" width="80" height="80">
     </div>
 
     <h3 class="username">{{employeeData.username}}</h3>
 
     <div class="rank">
-        <img src="../../../assets/ranking_1.png" width="80" height="80">
+        <img src="{{getUrlIconRank(employeeData.rank)}}" width="80" height="80">
     </div>
 
     <div class="department">
-        <img src="../../../assets/marketing.png" width="80" height="80">
-        <p>Marketing</p>
+        <img src="{{getUrlIconDepartment(employeeData.department)}}" width="80" height="80">
+        <p>{{employeeData.department}}</p>
     </div>
 
     <div class="exp_data">
