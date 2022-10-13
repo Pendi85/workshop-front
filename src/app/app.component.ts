@@ -11,7 +11,7 @@ export class AppComponent implements OnInit {
   navbar : Navbar;
   
   constructor() {
-    this.connected = true;
+    this.connected = false;
     this.navbar = new Navbar(this.connected);
   }
 

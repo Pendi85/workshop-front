@@ -17,7 +17,7 @@
         <label for="password">Password :</label>
         <input type="password" name="password" placeholder="Mot de passe" formControlName="password"
             pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$" required>
-        <p>Minimum 8 characters. Should contain at least on special character, a number and one letter</p>
+        <p class="form-text">Minimum 8 characters. Should contain at least on special character, a number and one letter</p>
         <p class="information-forms"
             *ngIf="submitted && (!password.valid || !confirmedPassword.valid || password.value != confirmedPassword.value)">
             Password fields were not selected correctly </p>
