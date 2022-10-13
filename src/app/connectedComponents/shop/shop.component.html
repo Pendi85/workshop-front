@@ -1,8 +1,12 @@
-<h2>Shop / Buy products</h2>
-<div class="products">
-    <div *ngFor="let p of products">
-        <img src="{{p.urlIcon}}" height="100" width="100"/>
-        <p>{{p.label}}</p>
-        <a href="/shop">Acheter : {{p.price}} pts</a>
+<h2 class="mt-4">Shop / Buy products</h2>
+<div class="w-75 d-flex">
+    <div class="products row">
+        <div class="card col-sm ms-5" *ngFor="let p of products">
+            <img class="card-img-top" src="{{p.urlIcon}}"/>
+            <div class="card-body">
+                <p class="card-text">{{p.label}}</p>
+                <a class="btn btn-success" href="/shop">Acheter : {{p.price}} pts</a>
+            </div>
+        </div>
     </div>
 </div>

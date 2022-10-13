@@ -1,5 +1,8 @@
 <h2>Stuffs / Inventory</h2>
-<div *ngFor="let s of stuffs">
-    <h4>Icon</h4> <!--Possiblité d'ajouter des icônes au nom du stuff-->
-    <p>{{s.name}}</p>
+<div class="d-flex flex-wrap text-align: center" style="margin-left: 200px; margin-right: 200px; margin-top: 100px">
+    <div style="background-color: lightgrey; border-radius: 10px;" class="m-5 p-4" *ngFor="let s of stuffs">
+        <h4>Icon</h4>
+        <!--Possiblité d'ajouter des icônes au nom du stuff-->
+        <p>{{s.name}}</p>
+    </div>
 </div>

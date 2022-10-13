@@ -1,9 +1,12 @@
-<h3>Quests available</h3>
-<button class="btn btn-primary" (click)="toggleQuests()">{{seeOnlyCompletedQuests ? "See all quests" :  "See completed quests"}}</button>
-<div>
-    <div *ngFor="let q of quests | filterQuests : seeOnlyCompletedQuests">
-        <p>{{q.name}}</p>
-        <span>+{{q.ptsToEarn}} points</span>
+<div class="row">
+    <h3 class="col">Quests available</h3>
+    <button class="col btn btn-primary" (click)="toggleQuests()">{{seeOnlyCompletedQuests ? "See all quests" :  "See completed quests"}}</button>
+</div>
+<div class="row m-5">
+    <div style="margin: 50px" class="col" *ngFor="let q of quests | filterQuests : seeOnlyCompletedQuests">
+        <div style="background-color: lightgrey; margin: 20px; padding: 50px"><p>{{q.name}}</p>
+        <span style="color: green">+{{q.ptsToEarn}} points</span>
         <img *ngIf="q.completed" src="../../../assets/check_icon.png" height="50" width="50"/>
+        </div>
     </div>
 </div>
